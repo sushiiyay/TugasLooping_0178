@@ -29,7 +29,7 @@ bool isPrima(int n){
 //Function untuk mengecek bilangan Fibonacci menggunakan while loop
 bool isFibonacci(int n){
     if (n<0) return false;
-    if (n==0 || n==1) return true
+    if (n==0 || n==1) return true;
 
     int a=0, b=1,c;
     while (true){
@@ -79,4 +79,34 @@ void tampilMenu() {
     cout << "0. Keluar Program" << endl;
     cout << "=========================================" << endl;
     cout << "Pilih menu (0-2): ";
+}
+
+// =============================================
+// MAIN FUNCTION
+// =============================================
+int main() {
+    while (true){
+        tampilMenu();
+        cin>>pilihan;
+
+    switch (pilihan){
+        case 1:
+        inputAngka();
+        tampilHasilPrima();
+        break;
+
+        case 2:
+        inputAngka;
+        tampilHasilFibonacci();
+        break;
+
+        case 0:
+        cout<< "\nTerimakasih telah menggunakan  program ini.\n";
+        return 0;
+
+        default:
+        cout<< "\nPilihan tidak valid! Silakan pilih 0, 1, atau 2.\n";
+        }
+    }
+    return 0;
 }
