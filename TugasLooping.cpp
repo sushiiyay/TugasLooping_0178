@@ -14,5 +14,5 @@ int pilihan = 0;
 //Function untuk mengecek bilangan prima menggunakan while loop
 bool isPrima(int n){
     if (n<=1) return false;
-    
+    if (n==2 || n==3) return true;
 }
